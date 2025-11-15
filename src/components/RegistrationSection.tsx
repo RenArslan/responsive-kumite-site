@@ -12,7 +12,7 @@ export const RegistrationSection: FC<RegistrationSectionProps> = ({
   qrCodeSrc,
 }) => {
   return (
-    <div className="flex flex-col items-center gap-6 py-8">
+    <div className="flex flex-col items-center gap-6 py-8 lg:min-w-[280px] shrink-0">
       <Button 
         variant="cta" 
         size="xl" 
