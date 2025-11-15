@@ -7,7 +7,7 @@ interface EventPosterProps {
 
 export const EventPoster: FC<EventPosterProps> = ({ src, alt }) => {
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-full mx-auto">
       <img 
         src={src} 
         alt={alt} 
