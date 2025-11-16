@@ -11,15 +11,14 @@ const Index = () => {
       <main className="max-w-7xl mx-auto px-4 py-8 space-y-12">
         {/* First Section */}
         <section className="space-y-8">
-          <EventPoster 
-            src="/RA_web_1.png" 
+          <EventPoster src="/responsive-kumite-site/RA_web_1.png"
             alt="Kumite Seminar with Rafael Aghayev - The Black Diamond of Karate" 
           />
           
           <div className="flex flex-col lg:flex-row gap-8 items-start justify-center">
             <RegistrationSection 
               registrationUrl={registrationUrl}
-              qrCodeSrc="/qr_code.png"
+              qrCodeSrc="/responsive-kumite-site/qr_code.png"
             />
             
             <NoticeCard>
@@ -47,15 +46,14 @@ const Index = () => {
 
         {/* Second Section */}
         <section className="space-y-8">
-          <EventPoster 
-            src="/RA_web_2.png" 
+         <EventPoster src="/responsive-kumite-site/RA_web_2.png"
             alt="Kumite Seminar Details - Schedule and Information" 
           />
           
           <div className="flex flex-col lg:flex-row gap-8 items-start justify-center">
             <RegistrationSection 
               registrationUrl={registrationUrl}
-              qrCodeSrc="/qr_code.png"
+              qrCodeSrc="/responsive-kumite-site/qr_code.png"
             />
             
             <NoticeCard>
