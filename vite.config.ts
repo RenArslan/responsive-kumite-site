@@ -1,13 +1,13 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import path from "path";
+import path from "node:path";
 
 export default defineConfig({
-  base: "/responsive-kumite-site/",   // IMPORTANT for GitHub Pages
+  base: "/responsive-kumite-site/",   // correct public base path
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(__dirname, "src"),
     },
   },
 });
