@@ -11,15 +11,18 @@ const Index = () => {
       <main className="max-w-7xl mx-auto px-4 py-8 space-y-12">
         {/* First Section */}
         <section className="space-y-8">
-          <EventPoster src="/responsive-kumite-site/RA_web_1.png"
-            alt="Kumite Seminar with Rafael Aghayev - The Black Diamond of Karate" 
-          />
           
+          <EventPoster
+  src={`${import.meta.env.BASE_URL}RA_web_1.png`}
+  alt="Kumite Seminar with Rafael Aghayev - The Black Diamond of Karate"
+/>     
           <div className="flex flex-col lg:flex-row gap-8 items-start justify-center">
             <RegistrationSection 
               registrationUrl={registrationUrl}
-              qrCodeSrc="/responsive-kumite-site/qr_code.png"
-            />
+<img
+  src={`${import.meta.env.BASE_URL}qr_code.png`}
+  alt="QR Code Registration"
+/>
             
             <NoticeCard>
               <p>
@@ -46,14 +49,21 @@ const Index = () => {
 
         {/* Second Section */}
         <section className="space-y-8">
-         <EventPoster src="/responsive-kumite-site/RA_web_2.png"
-            alt="Kumite Seminar Details - Schedule and Information" 
-          />
+         <EventPoster
+ 
+<EventPoster
+  src={`${import.meta.env.BASE_URL}RA_web_2.png`}
+  alt="Kumite Seminar Details"
+/>
+
           
           <div className="flex flex-col lg:flex-row gap-8 items-start justify-center">
             <RegistrationSection 
               registrationUrl={registrationUrl}
-              qrCodeSrc="/responsive-kumite-site/qr_code.png"
+              img
+  src={`${import.meta.env.BASE_URL}qr_code.png`}
+  alt="QR Code Registration"
+/>
             />
             
             <NoticeCard>
