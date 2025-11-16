@@ -40,7 +40,6 @@ const Index = () => {
                 </a>.
               </p>
               <p>All participants must have valid personal sports insurance.</p>
-              <p>Training sessions require karate-gi.</p>
               <p>
                 The organizer reserves the right to cancel the event if minimum
                 participation is not met. Ticket fees will be refunded (excluding
@@ -79,7 +78,6 @@ const Index = () => {
                 </a>.
               </p>
               <p>All participants must have valid personal sports insurance.</p>
-              <p>Training sessions require karate-gi.</p>
               <p>
                 The organizer reserves the right to cancel the event if minimum
                 participation is not met. Ticket fees will be refunded (excluding
