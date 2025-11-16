@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./pages/App";  // <-- FIXED path to your real app
+import App from "./pages/Index";   // <-- IMPORTANT FIX
 
 import "./index.css";
 
