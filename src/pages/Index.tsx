@@ -36,7 +36,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="text-primary underline hover:text-primary/80"
                 >
-                  Pajulahti Olympic Center booking page
+                  Olympic Training Center Pajulahti booking page
                 </a>.
               </p>
               <p>All participants must have valid personal sports insurance.</p>
@@ -74,7 +74,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="text-primary underline hover:text-primary/80"
                 >
-                  Pajulahti booking page
+                  Olympic Training Center Pajulahti booking page
                 </a>.
               </p>
               <p>All participants must have valid personal sports insurance.</p>
