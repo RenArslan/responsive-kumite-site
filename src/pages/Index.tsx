@@ -23,7 +23,7 @@ const Index = () => {
       <div className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-4">
         <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl">
           <img
-            src="/cancellation.png"
+            src={`${import.meta.env.BASE_URL}cancellation.png`}
             alt="Event Cancelled"
             className="w-full h-auto rounded-lg shadow-2xl"
           />
