@@ -10,17 +10,18 @@ const Index = () => {
 
   // 🔒 Disable background scrolling completely
   useEffect(() => {
+    const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+
     return () => {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = prevOverflow;
     };
   }, []);
 
   return (
     <div className="min-h-screen bg-background relative">
-
       {/* ===== CANCELLATION OVERLAY ===== */}
-      <div className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-4">
+      <div className="fixed inset-0 z-[9999] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 pointer-events-auto">
         <div className="w-full max-w-md sm:max-w-lg md:max-w-2xl">
           <img
             src={`${import.meta.env.BASE_URL}cancellation.png`}
@@ -30,9 +31,13 @@ const Index = () => {
         </div>
       </div>
 
-      {/* ===== ORIGINAL CONTENT (HIDDEN UNDER OVERLAY) ===== */}
-      <main className="max-w-7xl mx-auto px-4 py-8 space-y-12 pointer-events-none">
-
+      {/* ===== ORIGINAL CONTENT (BLOCKED UNDER OVERLAY) ===== */}
+      <main
+        className="max-w-7xl mx-auto px-4 py-8 space-y-12 pointer-events-none select-none"
+        aria-hidden="true"
+        // inert toimii monissa selaimissa; jos TypeScript valittaa, poista seuraava rivi
+        inert=""
+      >
         {/* First Section */}
         <section className="space-y-8">
           <EventPoster
@@ -48,7 +53,8 @@ const Index = () => {
 
             <NoticeCard>
               <p>
-                <strong className="text-primary">Note:</strong> Accommodation and meals are not included in the ticket price.
+                <strong className="text-primary">Note:</strong> Accommodation and
+                meals are not included in the ticket price.
               </p>
             </NoticeCard>
           </div>
@@ -66,7 +72,6 @@ const Index = () => {
         <section>
           <SocialLinks />
         </section>
-
       </main>
     </div>
   );
